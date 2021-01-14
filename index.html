@@ -6,9 +6,11 @@
   <title>A07 Tech</title>
   <link rel="icon" href="assets/img/logo2.png" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 </head>
 <body>
 	<!--Header-->
@@ -40,11 +42,11 @@
             </div>
             <div class="column-1">
                 <div class="text-contentone">
-                    <div class="heading">
+                    <div class="heading" data-aos="fade-up">
                         <h1>Sebuah Cara untuk</h1>
                         <h1>Mengembangkan Bisnis Anda</h1>
                     </div>
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-delay="300">
                         <p>Sekarang anda bisa membuat website untuk perusahaan anda,</p>
                         <p>mengelola setiap data perusahaan dengan cepat dan mudah!</p>
                         <p>untuk report yang maksimal.</p>
@@ -68,7 +70,7 @@
 	<div class="content-2">
 		<div class="container">
 			<div class="img-box">
-				<img src="assets/img/konten2.png" alt="img">
+				<img src="assets/img/konten2.png" alt="img" data-aos="fade-right">
 			</div> 
 			<div class="top-wrapper">
 				<h1>Apa yang membuat kami berbeda?</h1>
@@ -89,7 +91,7 @@
             <h4>Dimanapun dan kapanpun kami siap melayani anda</h4>
           </div>
           <div class="card-container">
-            <div class="card-1">
+            <div class="card-1" data-aos="fade-up">
               <div class="illustration">
                 <img src="assets/img/undraw_real_time_collaboration_c62i.svg" alt="real-time-collaboration">
               </div>
@@ -100,7 +102,7 @@
                 <p>Konsultasi mengenai pembuatan website hingga pengembangannya</p>
               </div>
             </div>
-            <div class="card-2">
+            <div class="card-2" data-aos="fade-up" data-aos-delay="300">
               <div class="illustration">
                 <img src="assets/img/undraw_building_websites_i78t.svg" alt="building-websites">
               </div>
@@ -111,7 +113,7 @@
                 <p>Untuk memudahkan anda dalam mengelola data perusahaan dengan report maksimal</p>
               </div>
             </div>
-            <div class="card-3">
+            <div class="card-3" data-aos="fade-up" data-aos-delay="600">
               <div class="illustration">
                 <img src="assets/img/undraw_team_collaboration_8eoc.svg" alt="team-collaboration">
               </div>
@@ -138,7 +140,7 @@
 				<a href="#" class="btn whatsapp"><span class="fa fa-whatsapp"></span></a>
 			</div>
 			<div class="footer-logo">
-				<img src="assets/img/undraw_ideas_s70l_o.svg">
+				<img src="assets/img/undraw_ideas_s70l_o.svg" data-aos="fade-left">
 			</div>
 		</div>
     </footer>
@@ -151,6 +153,9 @@
 			if($('#bars').val()=="1"){$('#list').removeClass('hidden');$('#bars').val("0");}
 			else{$('#list').addClass('hidden');$('#bars').val("1");}			
 		}
+		AOS.init({
+			duration: 1200,
+		});
 	</script>
   </body>
 </html>
