@@ -331,7 +331,7 @@ footer {
 
 .footer-contact {
   float: left;
-  margin-right: 400px;
+  padding-left:20px;
 }
 
 .footer-contact p {
@@ -344,7 +344,7 @@ footer .fa {
   color: white;
   font-size: 30px;
   padding-top: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .footer-logo{
