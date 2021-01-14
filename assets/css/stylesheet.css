@@ -10,12 +10,10 @@ body {
 
 .container {
   max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 /* CSS header */
 header {
-  width: 100%;
+  width:100%;
   background-color: rgba(255, 255, 255, 0.9);
   position :fixed;
   top: 0;
@@ -319,7 +317,6 @@ header ul li:hover{
   height: 140px;
   margin: 30px auto;
 }
-
 
 /* akhir dari CSS konten 3 */
 
