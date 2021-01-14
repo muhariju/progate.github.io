@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A07 Tech</title>
+  <link rel="icon" href="assets/img/logo2.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+	<!--Header-->
+    <header>
+      <div class="container">
+		<div class="header-left">
+			<img src="assets/img/logo.png">
+			<button class="menu" value="1" id="bars" onclick="return bars()"><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="header-right hidden" id="list">
+			<ul>
+				<li>Product</li>
+				<li>Service</li>
+				<li>About me</li>
+				<li class="login">Log in</li>
+			</ul>
+		</div>
+      </div>
+    </header>
+	
+	<!--Konten 1-->
+    <div class="content-1">
+        <div class="container">
+			<div class="column-3">
+                <div class="draw"> 
+					<div class="picture">
+					</div>
+                </div>
+            </div>
+            <div class="column-1">
+                <div class="text-contentone">
+                    <div class="heading">
+                        <h1>Sebuah Cara untuk</h1>
+                        <h1>Mengembangkan Bisnis Anda</h1>
+                    </div>
+                    <div class="description">
+                        <p>Sekarang anda bisa membuat website untuk perusahaan anda,</p>
+                        <p>mengelola setiap data perusahaan dengan cepat dan mudah!</p>
+                        <p>untuk report yang maksimal.</p>
+                    </div>
+                    <div class="submit-email">
+                        <input type="text" placeholder="Masukkan Email Anda" name="mail" required>
+                        <input type="submit" value="Mulai">
+                    </div>
+                </div>
+            </div>
+			<div class="column-2">
+                <div class="draw"> 
+					<div class="picture">
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!--Konten 2-->
+	<div class="content-2">
+		<div class="container">
+			<div class="img-box">
+				<img src="assets/img/konten2.png" alt="img">
+			</div> 
+			<div class="top-wrapper">
+				<h1>Apa yang membuat kami berbeda?</h1>
+				<p>Di A07 Tech, kami berusaha untuk memperbaiki dunia sistem TI, melalui dukungan pelanggan yang sangat baik.</p>
+				<div class="btn-wrapper">
+					<button class="mbtn green">Ayo Mulai!</button>
+				</div>
+			</div>
+        </div>
+    </div>
+	
+	<!--Konten 3-->
+    <div class="content-3">
+      <div class="message-wrapper">
+        <div class="container">
+          <div class="heading">
+            <h2>Layanan Kami</h2>
+            <h4>Dimanapun dan kapanpun kami siap melayani anda</h4>
+          </div>
+          <div class="card-container">
+            <div class="card-1">
+              <div class="illustration">
+                <img src="assets/img/undraw_real_time_collaboration_c62i.svg" alt="real-time-collaboration">
+              </div>
+              <div class="card-title">
+                <h3>Gratis<br/>Konsultasi</h3>
+              </div>
+              <div class="card-text">
+                <p>Konsultasi mengenai pembuatan website hingga pengembangannya</p>
+              </div>
+            </div>
+            <div class="card-2">
+              <div class="illustration">
+                <img src="assets/img/undraw_building_websites_i78t.svg" alt="building-websites">
+              </div>
+              <div class="card-title">
+                <h3>Pembuatan <br/> Website</h3>
+              </div>
+              <div class="card-text">
+                <p>Untuk memudahkan anda dalam mengelola data perusahaan dengan report maksimal</p>
+              </div>
+            </div>
+            <div class="card-3">
+              <div class="illustration">
+                <img src="assets/img/undraw_team_collaboration_8eoc.svg" alt="team-collaboration">
+              </div>
+              <div class="card-title">
+                <h3>Pengembangan <br/> Website</h3>
+              </div>
+              <div class="card-text">
+                <p>Untuk meningkatkan performa dan fungsi pada website anda, kami siap untuk anda</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!--Footer-->
+    <footer>
+		<div class="container">
+			<div class="footer-contact">
+				<p>Hubungi Kami</p>
+				<a href="#" class="btn twitter"><span class="fa fa-twitter"></span></a>
+				<a href="#" class="btn facebook"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn instagram"><span class="fa fa-instagram"></span></a>
+				<a href="#" class="btn whatsapp"><span class="fa fa-whatsapp"></span></a>
+			</div>
+			<div class="footer-logo">
+				<img src="assets/img/undraw_ideas_s70l_o.svg">
+			</div>
+		</div>
+    </footer>
+    <div class="copyright">
+		<p>Copyright <span class="fa fa-copyright"></span> 2021 A07 Tech All Rights Reserved.</p>
+    </div>
+		
+	<script>
+		function bars(){
+			if($('#bars').val()=="1"){$('#list').removeClass('hidden');$('#bars').val("0");}
+			else{$('#list').addClass('hidden');$('#bars').val("1");}			
+		}
+	</script>
+  </body>
+</html>
