@@ -10,6 +10,19 @@
 		<div id="reader" width="100%"></div>
 	</body>
 	<script>
+		function onScanSuccess(qrCodeMessage) {
+			var results;
+			var lastMessage;
+			var codesFound = 0;
+			function onScanSuccess(qrCodeMessage) {
+				if (lastMessage !== qrCodeMessage) {
+					lastMessage = qrCodeMessage;
+					++codesFound;
+					results = `[${codesFound}] - ${qrCodeMessage}`;
+					alert(results);
+				}
+			}
+		}
 		// This method will trigger user permissions
 		Html5Qrcode.getCameras().then(devices => {
 		  /**
