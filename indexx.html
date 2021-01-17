@@ -20,8 +20,9 @@
 			console.warn(`QR error = ${error}`);
 		}
 		 
-		let html5QrcodeScanner = new Html5QrcodeScanner(
-			"reader", { fps: 10, qrbox: 500 }, /* verbose= */ true);
-		html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+		const html5QrCode = new Html5Qrcode("#reader");
+		const qrCodeSuccessCallback = message => { /* handle success */ }
+		const config = { fps: 10, qrbox: 500 };
+		html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
 	</script>
 </html>
