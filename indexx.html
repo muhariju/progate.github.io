@@ -41,13 +41,13 @@
 			  // Start failed, handle it. For example,
 			  console.log(`Unable to start scanning, error: ${err}`);
 			});
-			 
+			html5QrCode.render(onScanSuccess); 
 			  
 		  }
 		}).catch(err => {
 		  // handle err
 		});
-		html5QrCode.render(onScanSuccess);
+		
 		function onScanSuccess(qrCodeMessage) {
 			alert("woy");
 		}
