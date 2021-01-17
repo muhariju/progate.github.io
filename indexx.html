@@ -12,7 +12,7 @@
 		function onScanSuccess(qrMessage) {
 			// handle the scanned code as you like
 			console.log(`QR matched = ${qrMessage}`);
-			alert();
+			alert('-');
 		}
 		 
 		function onScanFailure(error) {
@@ -21,7 +21,7 @@
 		}
 		 
 		let html5QrcodeScanner = new Html5QrcodeScanner(
-			"reader", { fps: 10, qrbox: 500 }, /* verbose= */ true);
+			"reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
 		html5QrcodeScanner.render(onScanSuccess, onScanFailure);
 	</script>
 </html>
