@@ -31,7 +31,8 @@
 			  },
 			  qrCodeMessage => {
 			    // do something when code is read. For example:
-			    console.log(`${qrCodeMessage}`);
+			    	alert(`${qrCodeMessage}`);
+				console.log(`${qrCodeMessage}`);
 			    
 			  },
 			  errorMessage => {
@@ -41,11 +42,7 @@
 			.catch(err => {
 			  // Start failed, handle it. For example,
 			  console.log(`Unable to start scanning, error: ${err}`);
-			});
-			html5QrCode.render(onScanSuccess); 
-			function onScanSuccess(qrCodeMessage) {
-				alert("woy");
-			}  
+			}); 
 		  }
 		}).catch(err => {
 		  // handle err
